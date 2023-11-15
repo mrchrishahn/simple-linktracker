@@ -1,4 +1,4 @@
-import React, { useId, type FC } from "react";
+import React, { type FC } from "react";
 
 interface BlobProps {
   rotation?: `${number}deg`;
@@ -21,7 +21,7 @@ export const Blob: FC<BlobProps> = ({
       fill="none"
       style={{
         transform: `${rotation ? `rotate(${rotation})` : ""} ${
-          flipHorizontal || flipVertical
+          flipHorizontal ?? flipVertical
             ? `scale(${flipHorizontal ? -1 : 1}, ${flipVertical ? -1 : 1})`
             : ""
         }`,

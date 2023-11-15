@@ -1,6 +1,5 @@
 import { type Config } from "tailwindcss";
 import { fontFamily } from "tailwindcss/defaultTheme";
-import { Colors } from "~/app/_components/ui/colors";
 
 export default {
   content: ["./src/**/*.tsx"],

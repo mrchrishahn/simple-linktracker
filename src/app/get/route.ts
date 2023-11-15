@@ -1,4 +1,4 @@
-import { permanentRedirect, redirect } from "next/navigation";
+import { redirect } from "next/navigation";
 import { type NextRequest } from "next/server";
 
 const safeValidateUrl = (url: string) => {
